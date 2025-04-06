@@ -1,0 +1,267 @@
+
+.top-three {
+  padding: 10px;
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.settlement-timer {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 40px;
+  padding: 5px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.top-decoration {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.gold-shield {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #ffd700, #ffaa00);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.shield-star {
+  font-size: 40px;
+  color: white;
+}
+
+.gold-shield::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  width: 140px;
+  height: 40px;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+  transform: rotate(90deg);
+}
+
+.gold-shield::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  width: 140px;
+  height: 40px;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+  transform: rotate(-90deg);
+}
+
+.hourly-badge {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #a239ff, #7e00ff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.badge-clock {
+  font-size: 30px;
+}
+
+.trophy-container {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #ffd700, #ffaa00);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trophy {
+  font-size: 40px;
+}
+
+.top-three-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+  height: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+.top-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  width: 30%;
+}
+
+.top-item.center {
+  transform: translateY(-25px);
+}
+
+.profile-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.crown {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  z-index: 3;
+}
+
+.rank-circle {
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.top-item.center .profile-image {
+  width: 100px;
+  height: 100px;
+}
+
+.avatar-placeholder {
+  font-size: 36px;
+  font-weight: bold;
+  color: #555;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.top-item.center .avatar-placeholder {
+  font-size: 48px;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.score-badge {
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 15px;
+  margin-top: 5px;
+  background-color: #e2e3ff;
+}
+
+.score-badge.rank-first {
+  background-color: #ffe2b1;
+}
+
+.score-badge.rank-second {
+  background-color: #e2e3ff;
+}
+
+.score-badge.rank-third {
+  background-color: #ffe2d1;
+}
+
+.coin {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.score-value {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-weight: 600;
+  color: #000;
+}
+
+.trophy-icon {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.fire-score {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-weight: 600;
+  color: #000;
+}
+
+.fire-icon {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* Theme colors */
+.wealth-theme {
+  background: linear-gradient(180deg, #ffeaa7 0%, #f6b93b 100%);
+}
+
+.hourly-theme {
+  background: linear-gradient(180deg, #c8a2ff 0%, #8559da 100%);
+}
+
+.party-theme {
+  background: linear-gradient(180deg, #ffb347 0%, #ff5733 100%);
+}
+
+.live-theme {
+  background: linear-gradient(180deg, #a8e063 0%, #56ab2f 100%);
+}

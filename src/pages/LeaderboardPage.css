@@ -1,0 +1,40 @@
+
+.leaderboard-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.leaderboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rankings-container {
+  margin-top: 20px;
+}
+
+/* Theme-specific styles */
+.wealth-theme {
+  background: linear-gradient(180deg, #ffeaa7 0%, #f6b93b 100%);
+}
+
+.hourly-theme {
+  background: linear-gradient(180deg, #c8a2ff 0%, #8559da 100%);
+}
+
+.party-theme {
+  background: linear-gradient(180deg, #ffb347 0%, #ff5733 100%);
+}
+
+.live-theme {
+  background: linear-gradient(180deg, #a8e063 0%, #56ab2f 100%);
+}
+
+.family-theme {
+  background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 100%);
+}
